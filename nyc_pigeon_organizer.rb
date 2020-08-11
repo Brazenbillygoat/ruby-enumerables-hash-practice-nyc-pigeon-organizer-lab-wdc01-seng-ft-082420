@@ -2,7 +2,7 @@ def nyc_pigeon_organizer(data)
   # write your code here!
 
   new_array = {}
-  pigeon_names_array = data[:gender][:male].concat( data[:gender][:female])
+  pigeon_names_array = data[:gender][:male] + data[:gender][:female]
   
   pigeon_names_array.each do |name| 
     new_array["#{name}"] = {color: [], gender: [], lives: [] }
